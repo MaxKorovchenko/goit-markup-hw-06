@@ -522,7 +522,7 @@ img {
 }
 
 .footer-socials {
-  margin-right: 93px;
+  margin-right: auto;
 }
 
 .footer-socials-text {
@@ -572,7 +572,7 @@ img {
 }
 
 .subs-btn {
-  display: inline-flex;
+  display: flex;
   width: 200px;
   height: 50px;
   gap: 10px;
@@ -731,7 +731,8 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-
+  
+  padding: 40px;
   width: 528px;
   height: 581px;
 
@@ -763,19 +764,17 @@ img {
   cursor: pointer;
   outline: transparent;
 
-  transition: fill var(--animation-time) var(--animation-function);
+  transition: fill var(--animation-time) var(--animation-function),
+  border-color var(--animation-time) var(--animation-function);
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
   fill: var(--accent-txt-cl);
+  border-color: var(--accent-bg-cl);
 }
 
 /* Register form */
-
-.register {
-  padding: 40px;
-}
 
 .register-title {
   margin-bottom: 30px;
@@ -933,6 +932,7 @@ img {
   outline: 2px solid var(--accent-txt-cl);
   outline-offset: 1px;
   border-radius: 2px;
+  /* fill: var(--accent-txt-cl); */
 } 
 
 .register-checkbox:hover + .register-icons {

@@ -925,7 +925,8 @@ img {
 
 .register-icons {
   outline: 2px solid transparent;
-  transition: outline var(--animation-time) var(--animation-function);
+  transition: outline var(--animation-time) var(--animation-function),
+  fill var(--animation-time) var(--animation-function);
 }
 
 .register-checkbox:focus + .register-icons {
@@ -933,6 +934,11 @@ img {
   outline-offset: 1px;
   border-radius: 2px;
 } 
+
+.register-checkbox:hover + .register-icons {
+  fill: var(--accent-txt-cl);
+}
+
 
 .register-desc {
   user-select: none;   

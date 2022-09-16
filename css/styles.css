@@ -800,10 +800,6 @@ img {
   margin-bottom: 28px;
 }
 
-.register-field:last-child {
-  margin-bottom: 20px;
-}
-
 .register-label {
   position: absolute;
   top: 50%;
